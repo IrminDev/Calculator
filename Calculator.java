@@ -20,11 +20,16 @@ public class Calculator {
             opc = sc.nextInt();
 
             System.out.println("Put the first operand");
+            a = sc.nextInt();
+
             System.out.println("Put the second operand");
-            
+            b = sc.nextInt();
+
             res = menu.menu(opc, a, b);
 
             System.out.println("The result is: " + res);
         }
+
+        sc.close();
     }
 }
