@@ -1,0 +1,32 @@
+import operations.Addition;
+import operations.Division;
+import operations.Multiplication;
+import operations.Substract;
+
+public class Menu {
+     public int menu(int opc, int a, int b) {
+        Addition adder= new Addition();
+        Substract subtracter= new Substract() ;
+        Multiplication multiplier= new Multiplication();
+        Division divider = new Division();
+        switch(opc){
+            case 1:
+            System.out.println("Suma");
+            return adder.addition(a, b);
+            case 2:
+            System.out.println("Resta");
+            return subtracter.substract(a, b)
+            case 3:
+            System.out.println("Multiplicacion");
+            return multiplier.multiplication(a, b);
+            case 4:
+            System.out.println("Division");
+            return (int) divider.division(a, b);
+        }
+
+        return -1;
+     }
+
+     
+    
+}
